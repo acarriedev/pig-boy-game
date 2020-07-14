@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://Sprites/enemies/fun-creep-01-Sheet.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/enemies/fun-creep-02-Sheet.png" type="Texture" id=1]
 [ext_resource path="res://FunCreep.gd" type="Script" id=2]
 
 [sub_resource type="CapsuleShape2D" id=1]
@@ -99,5 +99,17 @@ cast_to = Vector2( 0, 2 )
 
 [node name="GroundRayRight" type="RayCast2D" parent="."]
 position = Vector2( 3, -1 )
+enabled = true
+cast_to = Vector2( 0, 2 )
+
+[node name="BodyRayLeft" type="RayCast2D" parent="."]
+position = Vector2( -6, -12 )
+rotation = -4.71239
+enabled = true
+cast_to = Vector2( 0, 2 )
+
+[node name="BodyRayRight" type="RayCast2D" parent="."]
+position = Vector2( 6, -12 )
+rotation = 4.71239
 enabled = true
 cast_to = Vector2( 0, 2 )
