@@ -93,14 +93,16 @@ anims/Jump = SubResource( 4 )
 anims/Run = SubResource( 5 )
 
 [node name="GroundRayLeft" type="RayCast2D" parent="."]
-position = Vector2( -3, -1 )
+position = Vector2( -4, -1 )
 enabled = true
 cast_to = Vector2( 0, 2 )
+collide_with_areas = true
 
 [node name="GroundRayRight" type="RayCast2D" parent="."]
-position = Vector2( 3, -1 )
+position = Vector2( 5, -1 )
 enabled = true
 cast_to = Vector2( 0, 2 )
+collide_with_areas = true
 
 [node name="BodyRayLeft" type="RayCast2D" parent="."]
 position = Vector2( -6, -12 )

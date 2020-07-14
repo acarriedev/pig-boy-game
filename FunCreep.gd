@@ -29,8 +29,6 @@ func _ready():
 
 func _physics_process(delta):
 	motion.x = SPEED * direction
-	
-	print(sprite.flip_h)
 		
 	if motion.x < 0:
 		animation_player.play("Run")
@@ -44,9 +42,9 @@ func _physics_process(delta):
 	
 	motion.y += GRAVITY * delta * TARGET_FPS
 	
-	if body_ray_l.is_colliding():
+	if body_ray_l.is_colliding() or !ground_ray_l.is_colliding():
 		direction = 1
-	if body_ray_r.is_colliding():
+	if body_ray_r.is_colliding() or !ground_ray_r.is_colliding():
 		direction = -1
 
 			
