@@ -466,3 +466,6 @@ tile_data = PoolIntArray( 0, 0, 3, 65536, 0, 65539, 131072, 0, 262148, 131073, 0
 
 [node name="FunCreep" parent="." instance=ExtResource( 3 )]
 position = Vector2( 317, 72 )
+
+[node name="FunCreep2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 324, 165 )
